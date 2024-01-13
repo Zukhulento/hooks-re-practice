@@ -8,13 +8,14 @@ import { Layout } from "./05-useLayout/Layout";
 import { CallbackHook } from "./06-memo/CallbackHook";
 import { MemoHook } from "./06-memo/MemoHook";
 import { Memorize } from "./06-memo/Memorize";
+import { Padre } from "./07-tarea-memo/Padre";
 
 export const HooksApp = () => {
   return (
     <>
       <div>HooksApp</div>
       {/* <CounterApp /> */}
-      <CallbackHook/>
+      <Padre />
     </>
   );
 };
