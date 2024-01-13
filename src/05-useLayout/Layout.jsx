@@ -1,3 +1,5 @@
+//! El useLayout se utiliza para poder acceder a las dimensiones que tiene un componente o propiedades
+
 import { useCounter, useFetch} from "../hooks";
 import { LoadingQuote,Quote } from "../03-example";
 

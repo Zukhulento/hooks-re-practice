@@ -1,3 +1,4 @@
+//! El useRef se utiliza para acceder a un tag específico del dom
 import { useRef } from "react";
 
 export const FocusScreen = () => {
@@ -7,7 +8,7 @@ export const FocusScreen = () => {
   const onBtnPress = () => {
     // Para este punto el componente ya se renderizó y asignó el input al ref
     console.log(refInput)
-    // Asignandole foco a lo que almacenó el ref
+    // Asignandole foco a lo que almacenó el ref, se tiene que poner current
     refInput.current.select()
   }
 

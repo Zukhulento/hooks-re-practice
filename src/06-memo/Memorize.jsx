@@ -1,3 +1,5 @@
+//! El useMemo se utiliza para no volver a renderizar funciones o componentes pesados si no es necesario
+//! o sea, si no han cambiado sus props
 import { useState } from "react";
 import { useCounter } from "../hooks";
 import { Small } from "./Small";

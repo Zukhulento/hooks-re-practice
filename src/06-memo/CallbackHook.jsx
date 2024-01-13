@@ -1,10 +1,14 @@
 import { useCallback, useState } from "react";
+import { ShowIncrement } from "./ShowIncrement";
+// ! El useCallback hook se utiliza para guardar una función en memoria
+// ! con la pequeña desventaja de que se debe editar estados de manera diferente
+
 
 export const CallbackHook = () => {
   const [counter, setCounter] = useState(10);
 
   const incrementFuntion = useCallback((step) => {
-    setCounter((value) = value + step); // TODO esta es otra manera de acceder al valor del state sin usar "counter"
+    setCounter((c) => c + step); // TODO esta es otra manera de modificar el valor del state sin usar "counter"
   }, []);
 
   // const incrementFuntion = () =>

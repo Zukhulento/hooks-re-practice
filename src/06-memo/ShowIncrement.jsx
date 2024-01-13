@@ -1,3 +1,5 @@
+//! Este es un componente hijo para demostrar uso de useCallback
+
 export const ShowIncrement = ({ increment }) => {
   // Increment es una función recibida como prop
   return (
@@ -6,6 +8,8 @@ export const ShowIncrement = ({ increment }) => {
       onClick={() => {
         increment(5);
       }}
-    ></button>
+    >
+        +5
+    </button>
   );
 };
