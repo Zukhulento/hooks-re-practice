@@ -26,4 +26,4 @@ const addTodoAction = { type: "[TODO] Add todo", payload: newTodo };
 // Luego se llama al reducer y se le pasa la action creada recién
 todos = todoReducer(todos, addTodoAction);
 
-console.log({ state: todos });
+// console.log({ state: todos });
