@@ -6,7 +6,7 @@ const init = () => {
   // Utiliza JSON.parse que es lo opuesto a JSON.stringify y convierte a objeto
   // lo almacenado en localStorage con nombre todos
   //? en caso de que no encuentre el item devuelve un arreglo vacío
-  return JSON.parse(localStorage.getItem("todos") || []);
+  return JSON.parse(localStorage.getItem("todos")) || [];
 };
 
 export const useTodo = () => {
